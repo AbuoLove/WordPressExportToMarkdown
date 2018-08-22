@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="blog.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="marcoscobeamorin.wordpress.2018-08-01.001.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ReverseMarkdown" Version="2.0.0" />
+  </ItemGroup>
+</Project>
